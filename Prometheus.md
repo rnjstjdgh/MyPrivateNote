@@ -107,7 +107,15 @@
 4.  alert
     
     1. prometheus 내부에 정의된 rule
+         * ![image](https://user-images.githubusercontent.com/41561652/113257112-16b4cf80-9305-11eb-8e09-c0371889197d.png)
+
     2. alertmanager
+         * ![image](https://user-images.githubusercontent.com/41561652/113257189-30561700-9305-11eb-87cd-eb0193a64859.png)
+
+    3. slack
+         * ![image](https://user-images.githubusercontent.com/41561652/113257230-44017d80-9305-11eb-9147-e97666884fc2.png)
+
+
     
 5. Grafana
 
