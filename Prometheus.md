@@ -118,11 +118,13 @@
 
 
     
-5. Grafana example
+5. Grafana Demo
 
-   * import한 DashBoard: 
-   * Node exporter full: http://localhost:3000/d/rYdddlPWk/node-exporter-full?orgId=1&refresh=1m
-   * JVM(Micro meter): http://localhost:3000/d/qm6kkklMz/jvm-micrometer?orgId=1
+    * DataSource 설정
+    * 사이드 바 메뉴 간단 설명
+    * DashBoard example: 
+       * Node exporter full: http://localhost:3000/d/rYdddlPWk/node-exporter-full?orgId=1&refresh=1m
+       * JVM(Micro meter): http://localhost:3000/d/qm6kkklMz/jvm-micrometer?orgId=1
 
 
 # Reference
