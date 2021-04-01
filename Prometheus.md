@@ -41,28 +41,28 @@
 
 
 # 본론
-    0.  대략적인 설명(아키텍처)
+0.  대략적인 설명(아키텍처)
 
-    1.  Exporter Example
+1.  Exporter Example
 
-        1. node_exporter            => linux HW metric
-        2. WMI exporter             => window metric
-        3. spring boot actuator     => spring boot metric
-        4. 그밖에 exporter
+    1. node_exporter            => linux HW metric
+    2. WMI exporter             => window metric
+    3. spring boot actuator     => spring boot metric
+    4. 그밖에 exporter
 
-    2.  Pushgateway(x)
+2.  Pushgateway(x)
 
-    3.  Prometheus
+3.  Prometheus
         
-        1.  Service Discovery  
-        2.  PromQL
+    1.  Service Discovery  
+    2.  PromQL
 
-    4.  alert
+4.  alert
     
-        1. prometheus 내부에 정의된 rule
-        2. alertmanager
+    1. prometheus 내부에 정의된 rule
+    2. alertmanager
     
-    5. Grafana
+5. Grafana
 
 
 # Demo 
