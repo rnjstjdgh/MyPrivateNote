@@ -42,6 +42,7 @@
 
 # 본론
 0.  대략적인 설명(아키텍처)
+
 ![image](https://user-images.githubusercontent.com/41561652/113249662-09461800-92fa-11eb-8877-de69771aec08.png)
 
 
