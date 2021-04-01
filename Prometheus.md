@@ -125,3 +125,5 @@
 
 * https://prometheus.io/docs/introduction/overview/
 * https://grafana.com/
+* https://github.com/prometheus-community
+* https://github.com/prometheus
