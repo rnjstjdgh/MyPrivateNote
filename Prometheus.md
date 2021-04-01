@@ -18,12 +18,8 @@
 # 목차
     0.  대략적인 설명(아키텍처)
 
-    1.  Exporter Example
+    1.  exporter example
 
-        1. node_exporter            => linux HW metric
-        2. WMI exporter             => window metric
-        3. spring boot actuator     => spring boot metric
-        4. 그밖에 exporter
 
     2.  Pushgateway(x)
 
@@ -47,12 +43,24 @@
 
 
 
-1.  Exporter Example
+1.  Exporter
 
-    1. node_exporter            => linux HW metric
-    2. WMI exporter             => window metric
-    3. spring boot actuator     => spring boot metric
-    4. 그밖에 exporter
+    0. 기본적으로 collector들을 등록해 주면 해당 메트릭을 수집해서 HTTP GET endpoint를 제공하는 방식
+        * collector는 설정을 통해 추가 및 제거 가능
+        * exporter는 http endpoint를 제공하고 이를 prometheus에서 pulling 하는 방식임
+        * https endpoint는 실험적으로 제공하고 있음
+
+    1. exporter example
+        * https://github.com/prometheus
+        * https://github.com/prometheus-community
+        * 대표적인 exporter: node_exporter(linux) & spring boot actuator
+            * node exporter
+                * linux hw 및 os 자원 메트릭 제공
+                * MyDemo: http://localhost:3000/d/QHLjAQQGk/ec2-resource-usage?orgId=1
+                * import: http://localhost:3000/d/rYdddlPWk/node-exporter-full?orgId=1&refresh=1m
+
+            * spring boot actuator
+                * 
 
 2.  Pushgateway(x)
 
@@ -67,9 +75,6 @@
     2. alertmanager
     
 5. Grafana
-
-
-# Demo 
 
 
 
