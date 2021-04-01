@@ -65,7 +65,8 @@
     2.  PromQL
         * prometheus는 수집된 메트릭 데이터를 시계열로 DB에 저장하는데, 이 데이터를 가져오는데 사용하는 Qeury Language
         * EX>
-            ##instance vector, range vector
+        
+            ## instance vector, range vector
             *  ![image](https://user-images.githubusercontent.com/41561652/113255271-98572e00-9302-11eb-8748-d826d961fead.png)
 
             ## CPU Utilization
