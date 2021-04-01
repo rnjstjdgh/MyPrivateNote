@@ -64,6 +64,42 @@
 
     2.  PromQL
         * prometheus는 수집된 메트릭 데이터를 시계열로 DB에 저장하는데, 이 데이터를 가져오는데 사용하는 Qeury Language
+        * EX>
+            ##instance vector, range vector
+            *  ![image](https://user-images.githubusercontent.com/41561652/113255271-98572e00-9302-11eb-8748-d826d961fead.png)
+
+            ## CPU Utilization
+            ![image](https://user-images.githubusercontent.com/41561652/113255336-ac029480-9302-11eb-8456-6ebb2ae7d82d.png)
+            * CPU 사용량을 1을 기준으로 한 비율로 모드 별로 표현한 그래프
+            * node_cpu_seconds_total: 각 모드에서 CPU 마다 얼마나 많은 시간을 소비했는지 나타내는 카운터로서, 레이블은 cpu 와 mode
+            ![image](https://user-images.githubusercontent.com/41561652/113255394-c0df2800-9302-11eb-9cff-d0c99a751256.png)
+
+            * [1m]: 1분동안의 값을 range vector형태로 가져옴
+            * rate: 특정 시간동안의 range vector에서 값의 평균 변화량
+            * irate: 특정 시간동안의 range vector에서 값의 변화량(시작과 끝점만 보고 구한 변화량)
+            * avg without(cpu): cpu label은 뺀다 => 코어에 상관없이 생각 => 전체 CPU사용량 계산
+
+
+            ## Memory Usage
+            ![image](https://user-images.githubusercontent.com/41561652/113255435-cdfc1700-9302-11eb-808f-435de1f6d067.png)
+            * node_memory_MemTotal_bytes: 
+               * 머신의 실제 메모리 총량
+            * node_memory_MemFree_bytes: 
+               * 사용되지 않은 메모리의 총량
+               * 이게 곧 여유 분의 총량이라는 의미는 아님!
+            * node_memory_Cached_bytes: 
+               * 케시로 사용되고 있는 메모리
+            * node_memory_Buffers_bytes: 
+               * 버퍼로 사용되고 있는 메모리
+
+
+            ## Disk-Used
+            ![image](https://user-images.githubusercontent.com/41561652/113255585-f71ca780-9302-11eb-9f55-ba2046d58ac1.png)
+
+
+
+            ## Network Traffic
+            ![image](https://user-images.githubusercontent.com/41561652/113255617-00a60f80-9303-11eb-80c7-97c75354e2d9.png)
 
 
 
