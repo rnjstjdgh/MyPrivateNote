@@ -13,26 +13,16 @@
 
     * 모니터링을 위한 오픈소스 중 Prometheus를 살펴볼 것임
 
-
-
 # 목차
     0.  대략적인 설명(아키텍처)
-
     1.  exporter example
-
-
     2.  Pushgateway(x)
-
-    3.  Prometheus
-        
+    3.  Prometheus 
         1.  Service Discovery  
         2.  PromQL
-
     4.  alert
-    
         1. prometheus 내부에 정의된 rule
         2. alertmanager
-    
     5. Grafana
 
 
@@ -40,8 +30,6 @@
 0.  대략적인 설명(아키텍처)
 
 ![image](https://user-images.githubusercontent.com/41561652/113249662-09461800-92fa-11eb-8877-de69771aec08.png)
-
-
 
 1.  Exporter
 
@@ -63,13 +51,21 @@
                 * Actuator는 Spring MVC 혹은 Spring WebFlux를 사용하는 경우, Micrometer를 통해 생성된 애플리케이션의 metric을 Prometheus 서버에서 가져갈(Pull)수 있도록 추가적인 endpoint를 제공해준다.
                 * ![image](https://user-images.githubusercontent.com/41561652/113250764-1401ac80-92fc-11eb-9115-962df9e14b3f.png)
                 * 실제로는 애플리케이션에서 기본적으로 제공하는 Metric 뿐만 아니라 Micrometer를 이용해 직접 필요한 Metric을 추가할 수도 있다.
+                * import: http://localhost:3000/d/qm6kkklMz/jvm-micrometer?orgId=1
+
 
 2.  Pushgateway(x)
 
 3.  Prometheus
         
     1.  Service Discovery  
+        * prometheus에서 모니터링 대상이 되는 외부 시스템에 대한 endpoint를 정의한 파일
+        * 이 파일에 정의된 endpoint 에서 메트릭을 수집
+
     2.  PromQL
+        * prometheus는 수집된 메트릭 데이터를 시계열로 DB에 저장하는데, 이 데이터를 가져오는데 사용하는 Qeury Language
+
+
 
 4.  alert
     
