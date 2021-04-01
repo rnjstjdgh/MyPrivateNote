@@ -63,7 +63,7 @@
         * 이 파일에 정의된 endpoint 에서 메트릭을 수집
 
     2.  PromQL
-        * prometheus는 수집된 메트릭 데이터를 시계열로 DB에 저장하는데, 이 데이터를 가져오는데 사용하는 Qeury Language
+        * prometheus는 수집된 메트릭 데이터를 시계열로 DB에 저장하는데, 이 데이터를 원하는 형태로 조회하기 위해 사용하는 Qeury Language
         * EX>
         
             ## instance vector, range vector
