@@ -64,7 +64,7 @@
 
     2.  PromQL
         * prometheus는 수집된 메트릭 데이터를 시계열로 DB에 저장하는데, 이 데이터를 원하는 형태로 조회하기 위해 사용하는 Qeury Language
-        * EX>
+        * EX> http://localhost:3000/d/QHLjAQQGk/ec2-resource-usage?orgId=1
         
             ## instance vector, range vector
             *  ![image](https://user-images.githubusercontent.com/41561652/113255271-98572e00-9302-11eb-8748-d826d961fead.png)
