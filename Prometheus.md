@@ -105,7 +105,7 @@
 
 
 
-4.  alert
+4.  alert()
     
     1. prometheus 내부에 정의된 rule
          * ![image](https://user-images.githubusercontent.com/41561652/113257112-16b4cf80-9305-11eb-8e09-c0371889197d.png)
@@ -118,8 +118,11 @@
 
 
     
-5. Grafana
+5. Grafana example
 
+   * import한 DashBoard: 
+   * Node exporter full: http://localhost:3000/d/rYdddlPWk/node-exporter-full?orgId=1&refresh=1m
+   * JVM(Micro meter): http://localhost:3000/d/qm6kkklMz/jvm-micrometer?orgId=1
 
 
 # Reference
