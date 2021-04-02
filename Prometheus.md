@@ -57,7 +57,7 @@
         * 대표적인 exporter: node_exporter(linux) & spring boot actuator
             * node exporter
                 * linux hw 및 os 자원 메트릭 제공
-                * MyDemo: http://localhost:3000/d/QHLjAQQGk/ec2-resource-usage?orgId=1
+                * MyDemo: http://localhost:3000/d/Hoc62F_Mz/ec2-resource-usage-copy?orgId=1
                 * import: http://localhost:3000/d/rYdddlPWk/node-exporter-full?orgId=1&refresh=1m
 
             * spring boot actuator
