@@ -27,6 +27,18 @@
     5. Grafana
 
 
+# 실습 환경 갖추기
+1.  링크(https://grafana.com/grafana/download?platform=windows)로 들어가서 grafana window버전 다운로드
+
+![image](https://user-images.githubusercontent.com/41561652/113390419-a4a7bd80-93cc-11eb-90b8-0aa8b73f744c.png)
+
+2.  로그인(최초: admin / admin)
+3.  datasource 설정(이때 EC2에 노출시킨 prometheus서버에 붙어야 함)
+
+![image](https://user-images.githubusercontent.com/41561652/113390475-c143f580-93cc-11eb-8e4a-5a70c3452753.png)
+
+4.  node_exporter_full을 import(https://grafana.com/grafana/dashboards/1860)
+
 # 본론
 0.  대략적인 설명(아키텍처)
 
