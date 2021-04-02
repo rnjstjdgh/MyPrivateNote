@@ -64,7 +64,7 @@
                 * Actuator는 Spring MVC 혹은 Spring WebFlux를 사용하는 경우, Micrometer를 통해 생성된 애플리케이션의 metric을 Prometheus 서버에서 가져갈(Pull)수 있도록 추가적인 endpoint를 제공해준다.
                 * ![image](https://user-images.githubusercontent.com/41561652/113250764-1401ac80-92fc-11eb-9115-962df9e14b3f.png)
                 * 실제로는 애플리케이션에서 기본적으로 제공하는 Metric 뿐만 아니라 Micrometer를 이용해 직접 필요한 Metric을 추가할 수도 있다.
-                * import: http://localhost:3000/d/qm6kkklMz/jvm-micrometer?orgId=1
+                * import: http://localhost:3000/d/y6AL2FlMk/jvm-micrometer?orgId=1&refresh=30s
 
 
 2.  Pushgateway(x)
