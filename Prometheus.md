@@ -28,6 +28,9 @@
 
 
 # 실습 환경 갖추기
+
+0.  prometheus와 node_exporter는 이미 ec2에 올려둠 => 로컬에서 그라파나만 설치해서 보면서 하면 됨
+
 1.  링크(https://grafana.com/grafana/download?platform=windows)로 들어가서 grafana window버전 다운로드
 
 ![image](https://user-images.githubusercontent.com/41561652/113390419-a4a7bd80-93cc-11eb-90b8-0aa8b73f744c.png)
